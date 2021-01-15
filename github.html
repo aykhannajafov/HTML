@@ -6,9 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style = "color : blue" >Added an h1 !!!</h1>
-    <h2>Welcome to this website.</h2>
-    <h3>HI GUYS</h3>
-    <h4>Add a line fo code.</h4>
+    <button onclick = "addone()">Click to add one more point.</button>
+    <h1 id = "addonething">Click to add something</h1>
+    <script>
+        id = 0;
+        var addonething = document.getElementById("addonething");
+        function addone(){
+            id++;
+            addonething.innerHTML = id;
+        }
+    </script>
 </body>
 </html>
